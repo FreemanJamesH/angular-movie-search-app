@@ -6,4 +6,8 @@ movieApp.config(function($routeProvider){
     templateUrl: 'pages/results.html',
     controller: 'resultsController'
   })
+
+  .when('/movies/:imdbid', {
+    
+  })
 })
