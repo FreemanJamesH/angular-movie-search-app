@@ -1,1 +1,1 @@
-var movieApp = angular.module('movieApp', []);
+var movieApp = angular.module('movieApp', ['ngRoute', 'ngResource']);
