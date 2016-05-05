@@ -7,7 +7,8 @@ movieApp.config(function($routeProvider){
     controller: 'resultsController'
   })
 
-  .when('/movies/:imdbid', {
-    
+  .when('/movie/:imdbid', {
+    templateUrl: 'pages/movie.html',
+    controller: 'movieController'
   })
 })

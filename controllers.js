@@ -17,3 +17,20 @@ movieApp.controller('resultsController', ['$scope', '$resource', 'mathService', 
   }
 
 }])
+
+movieApp.controller('movieController', ['$scope', '$routeParams', '$resource', function($scope, $routeParams, $resource){
+
+  $scope.view = {};
+  $scope.view.imdbid = $routeParams.imdbid;
+
+  $scope.omdbAPI = $resource('http://www.omdbapi.com/?');
+
+  $scope.omdbCall = $scope.omdbAPI.get({i:$scope.view.imdbid}).$promise.then(function(results) {
+      $scope.results = results.Search;
+      console.log(results);
+    })
+
+
+console.log('movieController initialized!' + $scope.view.imdbid)
+
+}])
