@@ -1,0 +1,26 @@
+img {
+  width: 100%
+}
+
+.odd, .even {
+  margin: 0.2%;
+}
+
+
+.odd {
+  background-color: rgba(245, 238, 179, 0.5);
+}
+
+.odd:hover {
+  background-color: rgba(245, 238, 179, 0.9);
+  cursor: pointer;
+}
+
+.even {
+  background-color: rgba(235, 236, 229, 0.5);
+}
+
+.even:hover {
+  background-color: rgba(235, 236, 229, 0.9);
+  cursor: pointer;
+}
