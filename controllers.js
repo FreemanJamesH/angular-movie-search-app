@@ -25,9 +25,12 @@ movieApp.controller('movieController', ['$scope', '$routeParams', '$resource', f
 
   $scope.omdbAPI = $resource('http://www.omdbapi.com/?');
 
-  $scope.omdbCall = $scope.omdbAPI.get({i:$scope.view.imdbid}).$promise.then(function(results) {
-      $scope.results = results.Search;
-      console.log(results);
+  $scope.omdbCall = $scope.omdbAPI.get({i:$scope.view.imdbid,
+                                        tomatoes: true,
+                                        plot: 'full'
+                                        }).$promise.then(function(results) {
+      $scope.movie = results;
+      console.log(results)
     })
 
 

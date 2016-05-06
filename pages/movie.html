@@ -1,1 +1,17 @@
-<h1>hellow</h1>
+<div class="row flexbox">
+  <div class="col-md-3">
+    <div class="header text-center">
+      <h3>{{movie.Title}}</h3>
+    </div>
+    <img src="{{movie.Poster}}" alt="">
+  </div>
+  <div class="col-md-8">
+    <p><i>{{movie.Plot}}</i></p>
+    <p>Featuring: {{movie.Actors}}</p>
+    <p>Written by: {{movie.Writer}}</p>
+    <p>Directed by: {{movie.Director}}</p>
+    <p>Released: {{movie.Released}}</p>
+    <p>Runtime: {{movie.Runtime}}</p>
+    <p>Rated: {{movie.Rated}}</p>
+  </div>
+</div>

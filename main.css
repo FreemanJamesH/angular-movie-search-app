@@ -24,3 +24,14 @@ img {
   background-color: rgba(235, 236, 229, 0.9);
   cursor: pointer;
 }
+
+header, h3 {
+  margin-top: 0px;
+}
+
+.flexbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: red;
+}
