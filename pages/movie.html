@@ -13,5 +13,8 @@
     <p>Released: {{movie.Released}}</p>
     <p>Runtime: {{movie.Runtime}}</p>
     <p>Rated: {{movie.Rated}}</p>
+    <div class="tomatometer" ng-class="{'badReview': movie.tomatoMeter < 50, 'goodReview' : movie.tomatoMeter >= 50}">{{movie.tomatoMeter}}%</div>
+    </div>
+    <div>
   </div>
 </div>

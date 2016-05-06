@@ -8,7 +8,8 @@ movieApp.controller('resultsController', ['$scope', '$resource', 'mathService', 
   $scope.omdbCall = function() {
 
     $scope.omdbAPI.get({
-      s: $scope.searchInput
+      s: $scope.searchInput,
+      tomatoes: true
     }).$promise.then(function(results) {
       $scope.results = results.Search;
       console.log(results.Search);
